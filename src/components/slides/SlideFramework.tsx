@@ -18,9 +18,8 @@ const SlideFramework = ({ onNavigate }: SlideFrameworkProps) => (
       Framework: <span className="text-gradient-yellow">Understand → Translate → Deliver → Improve</span>
     </SlideTitle>
     <SlideSubtitle>My mental model for leading — maps directly to the SDLC.</SlideSubtitle>
-    <p className="text-muted-foreground text-xs leading-relaxed max-w-2xl font-sans italic">
-      Each phase feeds the next, and every cycle sharpens the team's ability to ship the right thing, faster and with fewer surprises. 
-      It's not a rigid process — it's a mindset: stay curious in discovery, be precise in translation, stay accountable in delivery, and always look back to learn.
+    <p className="text-muted-foreground text-xs leading-relaxed max-w-2xl font-sans">
+      This loop connects user value with system reality. We understand the problem end-to-end, translate it into clear deliverables, execute with quality, and improve using production feedback. The goal is simple: better outcomes, faster learning, and fewer risks.
     </p>
     {/* Visual diagram */}
     <div className="flex-1 flex flex-col items-center justify-center gap-6">
