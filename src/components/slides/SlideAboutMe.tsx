@@ -1,5 +1,6 @@
 import SlideLayout, { SlideTitle, SlideSubtitle, Card, Badge } from "@/components/SlideLayout";
-import { Briefcase, GraduationCap, Globe, Award, Code, Database } from "lucide-react";
+import { Briefcase, Award, Code, Database } from "lucide-react";
+import aboutMeIllustration from "@/assets/about-me-illustration.png";
 
 const SlideAboutMe = () => (
   <SlideLayout>
@@ -7,7 +8,7 @@ const SlideAboutMe = () => (
       Diego Forero — <span className="text-gradient-yellow">Who Am I?</span>
     </SlideTitle>
     <SlideSubtitle>
-      Tech Lead / Senior Software Engineer · Backend-focused, Full-Stack capable · 7+ years
+      Tech Lead / Senior Software Engineer · Backend-focused · 7+ years
     </SlideSubtitle>
 
     <div className="grid grid-cols-3 gap-4 flex-1">
@@ -22,20 +23,12 @@ const SlideAboutMe = () => (
             Tech Lead with a strong backend foundation — close to the technical detail to understand systems end-to-end, and close to the user to maximise value delivery.
           </p>
           <p className="text-muted-foreground text-xs leading-relaxed">
-            Comfortable owning the full lifecycle: from discovery and architecture to CI/CD and post-release observability.
+            Comfortable owning the full lifecycle: from discovery and architecture to CI/CD and production monitoring.
           </p>
         </Card>
-        <Card className="flex flex-col gap-2">
-          <div className="flex items-center gap-2 mb-1">
-            <Database className="text-slide-accent-green" size={18} />
-            <h3 className="font-display font-semibold text-foreground text-sm">Core Strengths</h3>
-          </div>
-          <div className="flex flex-wrap gap-1">
-            {["E2E Ownership", "Distributed Systems", "Data Pipelines", "Agile/Scrum"].map((s) => (
-              <span key={s} className="text-[10px] font-medium px-2 py-0.5 rounded-full border bg-primary/20 text-primary border-primary/30">{s}</span>
-            ))}
-          </div>
-        </Card>
+        <div className="flex items-center justify-center flex-1">
+          <img src={aboutMeIllustration} alt="Tech Lead illustration" className="max-h-[140px] rounded-lg opacity-90" />
+        </div>
       </div>
 
       {/* Col 2 - Experience highlights */}
