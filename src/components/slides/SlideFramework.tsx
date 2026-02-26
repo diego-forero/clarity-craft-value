@@ -5,7 +5,7 @@ const steps = [
   { icon: Search, label: "Understand", desc: "E2E: user, flow, data, risks, SLAs", color: "text-primary", slideIndex: 4 },
   { icon: ArrowRightLeft, label: "Translate", desc: "Outcomes + stories with AC + NFRs + slicing", color: "text-slide-accent-green", slideIndex: 5 },
   { icon: Rocket, label: "Deliver", desc: "Planning, ownership, reviews, pairing, CI/CD", color: "text-primary", slideIndex: 6 },
-  { icon: TrendingUp, label: "Improve", desc: "Operate, metrics, retro, improvement roadmap", color: "text-slide-accent-green", slideIndex: 7 },
+  { icon: TrendingUp, label: "Improve", desc: "Operate, metrics, feedback, improvement roadmap", color: "text-slide-accent-green", slideIndex: 7 },
 ];
 
 interface SlideFrameworkProps {
@@ -17,7 +17,7 @@ const SlideFramework = ({ onNavigate }: SlideFrameworkProps) => (
     <SlideTitle>
       Framework: <span className="text-gradient-yellow">Understand → Translate → Deliver → Improve</span>
     </SlideTitle>
-    <SlideSubtitle>My mental model for leading — maps directly to the SDLC. Strategic thinking meets hands-on problem-solving.</SlideSubtitle>
+    <SlideSubtitle>My mental model for leading — maps directly to the SDLC. Each phase feeds the next, and every cycle sharpens the team's ability to ship the right thing, faster and with fewer surprises.</SlideSubtitle>
 
     {/* Visual diagram */}
     <div className="flex-1 flex flex-col items-center justify-center gap-6">
@@ -64,14 +64,14 @@ const SlideFramework = ({ onNavigate }: SlideFrameworkProps) => (
           ))}
         </div>
 
-        {/* Feedback loop arrow */}
+        {/* Feedback loop arrow — from Improve back to Understand */}
         <div className="flex justify-center mt-4">
-          <div className="flex items-center gap-2 text-muted-foreground text-xs">
-            <svg width="200" height="24" viewBox="0 0 200 24" fill="none" className="opacity-50">
-              <path d="M190 4C190 4 195 12 190 20L10 20C10 20 5 12 10 4" stroke="hsl(var(--primary))" strokeWidth="1" strokeDasharray="4 3" strokeLinecap="round"/>
-              <path d="M15 7L10 4L13 0" stroke="hsl(var(--primary))" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
+          <div className="relative flex items-center gap-2 text-muted-foreground text-xs">
+            <svg width="260" height="28" viewBox="0 0 260 28" fill="none" className="opacity-50">
+              <path d="M240 4C245 12 240 24 240 24L20 24C20 24 15 12 20 4" stroke="hsl(var(--primary))" strokeWidth="1" strokeDasharray="4 3" strokeLinecap="round"/>
+              <path d="M25 7L20 4L23 0" stroke="hsl(var(--primary))" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <span className="absolute text-xs text-primary/60 font-display">continuous feedback loop</span>
+            <span className="absolute inset-0 flex items-center justify-center text-xs text-primary/60 font-display">continuous feedback loop</span>
           </div>
         </div>
       </div>
