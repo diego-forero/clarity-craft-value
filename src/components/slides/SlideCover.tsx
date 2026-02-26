@@ -1,9 +1,8 @@
-import SlideLayout, { SlideTitle, SlideSubtitle, Badge, Card } from "@/components/SlideLayout";
+import SlideLayout, { SlideTitle, SlideSubtitle, Badge } from "@/components/SlideLayout";
 import bet365Logo from "@/assets/bet365-logo.png";
 
 const SlideCover = () => (
   <SlideLayout className="items-center justify-center text-center relative overflow-hidden">
-    {/* Decorative circle */}
     <div className="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-slide-highlight/40" />
     <div className="absolute -left-16 -top-16 w-60 h-60 rounded-full bg-slide-highlight/20" />
     
@@ -15,7 +14,7 @@ const SlideCover = () => (
       SDLC Walkthrough
     </p>
     <p className="text-muted-foreground text-sm max-w-md">
-      Liderazgo técnico para entregar valor — Software Development Team Leader
+      Technical leadership to deliver value — Software Development Team Leader
     </p>
     <div className="flex gap-2 mt-6">
       <Badge>SDLC</Badge>

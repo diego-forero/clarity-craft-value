@@ -5,14 +5,14 @@ import { Link, Shield, FileCheck } from "lucide-react";
 
 const SlideMatas = () => (
   <SlideLayout>
-    <SlideTitle>Integración: Mata's + Lipsey's (Mayorista / FFL)</SlideTitle>
-    <SlideSubtitle>Oportunidad de negocio en dominio regulado — de restricciones a historias</SlideSubtitle>
+    <SlideTitle>Integration: Mata's + Lipsey's (Wholesaler / FFL)</SlideTitle>
+    <SlideSubtitle>Business opportunity in a regulated domain — from constraints to stories</SlideSubtitle>
 
     <div className="flex items-center gap-6 mb-4">
       <img src={matasLogo} alt="Mata's Tactical" className="h-10 object-contain bg-foreground/90 rounded-md px-2 py-1" />
       <div className="flex items-center gap-2">
         <Link className="text-primary" size={20} />
-        <span className="text-muted-foreground text-sm font-display">Integración</span>
+        <span className="text-muted-foreground text-sm font-display">Integration</span>
         <Link className="text-primary" size={20} />
       </div>
       <img src={lipseysLogo} alt="Lipsey's" className="h-10 object-contain bg-foreground/90 rounded-md px-2 py-1" />
@@ -22,23 +22,23 @@ const SlideMatas = () => (
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <Shield className="text-primary" size={18} />
-          <h3 className="font-display font-semibold text-foreground text-sm">Dominio regulado</h3>
+          <h3 className="font-display font-semibold text-foreground text-sm">Regulated Domain</h3>
         </div>
-        <p className="text-muted-foreground text-xs">FFL compliance, verificación de licencias, restricciones de envío por estado. Constraints como parte del diseño, no afterthought.</p>
+        <p className="text-muted-foreground text-xs">FFL compliance, licence verification, state-based shipping restrictions. Constraints as part of the design, not an afterthought.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <FileCheck className="text-slide-accent-green" size={18} />
-          <h3 className="font-display font-semibold text-foreground text-sm">Story mapping</h3>
+          <h3 className="font-display font-semibold text-foreground text-sm">Story Mapping</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Catálogo sync con mayorista → verificación FFL → checkout con validación → fulfillment tracking. Cada slice verificable.</p>
+        <p className="text-muted-foreground text-xs">Catalogue sync with wholesaler → FFL verification → checkout with validation → fulfilment tracking. Each slice verifiable.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <Shield className="text-primary" size={18} />
-          <h3 className="font-display font-semibold text-foreground text-sm">Reducción de riesgo</h3>
+          <h3 className="font-display font-semibold text-foreground text-sm">Risk Reduction</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Spike técnico primero. Integración en sandbox. Feature flag para rollout gradual. Monitoring de compliance en cada transacción.</p>
+        <p className="text-muted-foreground text-xs">Technical spike first. Sandbox integration. Feature flag for gradual rollout. Compliance monitoring on every transaction.</p>
       </Card>
     </div>
 

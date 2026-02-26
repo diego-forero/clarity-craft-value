@@ -4,7 +4,7 @@ import { GitBranch, Users, Eye, Workflow } from "lucide-react";
 const SlideDeliver = () => (
   <SlideLayout>
     <SlideTitle>
-      <span className="text-primary">Deliver</span> — Colaboración y entrega continua
+      <span className="text-primary">Deliver</span> — Collaboration and continuous delivery
     </SlideTitle>
     <SlideSubtitle>Planning · Ownership · Code Reviews · Pairing · CI/CD</SlideSubtitle>
 
@@ -12,30 +12,30 @@ const SlideDeliver = () => (
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <Users className="text-primary" size={18} />
-          <h3 className="font-display font-semibold text-foreground text-sm">Ownership distribuido</h3>
+          <h3 className="font-display font-semibold text-foreground text-sm">Distributed Ownership</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Cada desarrollador es owner de sus historias. Yo remuevo blockers, no microgestiono. Autonomía con accountability.</p>
+        <p className="text-muted-foreground text-xs">Each developer owns their stories. I remove blockers, not micromanage. Autonomy with accountability.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <Eye className="text-slide-accent-green" size={18} />
-          <h3 className="font-display font-semibold text-foreground text-sm">Code Reviews como mentoría</h3>
+          <h3 className="font-display font-semibold text-foreground text-sm">Code Reviews as Mentoring</h3>
         </div>
-        <p className="text-muted-foreground text-xs">PRs no son gatekeeping — son oportunidades de transferencia de conocimiento y mejora de calidad.</p>
+        <p className="text-muted-foreground text-xs">PRs are not gatekeeping — they are opportunities for knowledge transfer and quality improvement.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <GitBranch className="text-primary" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">CI/CD & Quality Gates</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Tests automatizados, linting, coverage. El pipeline protege calidad. Feature flags para releases seguros.</p>
+        <p className="text-muted-foreground text-xs">Automated tests, linting, coverage. The pipeline protects quality. Feature flags for safe releases.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <Workflow className="text-slide-accent-green" size={18} />
-          <h3 className="font-display font-semibold text-foreground text-sm">Pairing en problemas complejos</h3>
+          <h3 className="font-display font-semibold text-foreground text-sm">Pairing on Complex Problems</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Pairing sessions para onboarding, bugs complejos y decisiones de diseño. Multiplica conocimiento del equipo.</p>
+        <p className="text-muted-foreground text-xs">Pairing sessions for onboarding, complex bugs, and design decisions. Multiplies team knowledge.</p>
       </Card>
     </div>
   </SlideLayout>
