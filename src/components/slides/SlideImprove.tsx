@@ -19,9 +19,9 @@ const SlideImprove = () => (
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <LineChart className="text-slide-accent-green" size={18} />
-          <h3 className="font-display font-semibold text-foreground text-sm">DORA Metrics</h3>
+          <h3 className="font-display font-semibold text-foreground text-sm">Delivery Metrics</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Deployment frequency, lead time, MTTR, change failure rate. Objective measurement of team effectiveness.</p>
+        <p className="text-muted-foreground text-xs">Track cycle time, deployment frequency, and failure rates. Use data to identify bottlenecks, celebrate progress, and drive continuous improvement.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">

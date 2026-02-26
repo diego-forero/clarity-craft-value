@@ -38,7 +38,7 @@ const SlideDone = () => (
     </div>
 
     <div className="mt-3 flex gap-2">
-      <Badge>DORA Metrics</Badge>
+      <Badge>Delivery Metrics</Badge>
       <Badge variant="green">Quality Gates</Badge>
       <Badge variant="dim">Continuous Improvement</Badge>
     </div>
