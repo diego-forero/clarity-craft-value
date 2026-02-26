@@ -36,7 +36,7 @@ const SlideIntro = () => (
           <li>Pair on complex problems and unblock fast</li>
           <li>Set standards that protect quality</li>
         </ul>
-        <img src={imgTechnical} alt="Technical detail" className="w-full h-28 object-contain rounded-md opacity-85 mt-auto" />
+        <img src={imgTechnical} alt="Technical detail" className="w-full h-36 object-contain rounded-md opacity-85 mt-auto mb-2" />
       </Card>
       <Card className="flex flex-col gap-2 p-3">
         <div className="flex items-center gap-2 mb-1">
