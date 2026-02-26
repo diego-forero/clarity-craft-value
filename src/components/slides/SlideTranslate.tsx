@@ -6,7 +6,7 @@ const SlideTranslate = () => (
     <SlideTitle>
       <span className="text-primary">Translate</span> — From needs to deliverable stories
     </SlideTitle>
-    <SlideSubtitle>Outcomes → User Stories + AC + NFRs + Story Slicing + Estimation</SlideSubtitle>
+    <SlideSubtitle>Outcomes → well-defined stories → acceptance criteria → quality requirements → delivery plan</SlideSubtitle>
 
     <div className="grid grid-cols-2 gap-4 flex-1">
       <Card>
@@ -21,7 +21,7 @@ const SlideTranslate = () => (
           <Scissors className="text-slide-accent-green" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">Story Slicing</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Vertical slicing: each story delivers independent value. Thin end-to-end slices that validate assumptions early.</p>
+        <p className="text-muted-foreground text-xs">Vertical slicing: each story delivers independent value. Break work into small end-to-end increments that deliver value early and reduce uncertainty.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
@@ -33,7 +33,7 @@ const SlideTranslate = () => (
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <BarChart3 className="text-slide-accent-green" size={18} />
-          <h3 className="font-display font-semibold text-foreground text-sm">Explicit NFRs</h3>
+          <h3 className="font-display font-semibold text-foreground text-sm">Quality Requirements</h3>
         </div>
         <p className="text-muted-foreground text-xs">Performance, security, observability as part of the story. Not as an afterthought.</p>
       </Card>
