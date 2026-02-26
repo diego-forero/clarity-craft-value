@@ -33,7 +33,7 @@ const SlideTranslate = () => (
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <BarChart3 className="text-slide-accent-green" size={18} />
-          <h3 className="font-display font-semibold text-foreground text-sm">Explicit NFRs</h3>
+          <h3 className="font-display font-semibold text-foreground text-sm">Quality Requirements</h3>
         </div>
         <p className="text-muted-foreground text-xs">Performance, security, observability as part of the story. Not as an afterthought.</p>
       </Card>
