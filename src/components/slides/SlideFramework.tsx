@@ -17,7 +17,7 @@ const SlideFramework = ({ onNavigate }: SlideFrameworkProps) => (
     <SlideTitle>
       Framework: <span className="text-gradient-yellow">Understand → Translate → Deliver → Improve</span>
     </SlideTitle>
-    <SlideSubtitle>My mental model for leading — maps directly to the SDLC. Strategic thinking meets hands-on problem-solving.</SlideSubtitle>
+    <SlideSubtitle>My mental model for leading — maps directly to the SDLC. Each phase feeds the next, and every cycle sharpens the team's ability to ship the right thing, faster and with fewer surprises.</SlideSubtitle>
 
     {/* Visual diagram */}
     <div className="flex-1 flex flex-col items-center justify-center gap-6">
