@@ -6,15 +6,21 @@ const SlideCover = () => (
     <div className="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-slide-highlight/40" />
     <div className="absolute -left-16 -top-16 w-60 h-60 rounded-full bg-slide-highlight/20" />
     
-    <img src={bet365Logo} alt="bet365" className="w-24 h-24 rounded-xl mb-6 glow-yellow" />
-    <h1 className="font-display font-black text-3xl md:text-4xl text-foreground mb-3">
+    <img src={bet365Logo} alt="bet365" className="w-20 h-20 rounded-xl mb-5 glow-yellow" />
+    <h1 className="font-display font-black text-3xl md:text-4xl text-foreground mb-2">
       Lead with Clarity
     </h1>
-    <p className="text-primary font-display font-semibold text-lg md:text-xl mb-2">
+    <p className="text-primary font-display font-semibold text-lg md:text-xl mb-1">
       SDLC Walkthrough
     </p>
-    <p className="text-muted-foreground text-sm max-w-md">
+    <p className="text-muted-foreground text-sm max-w-md mb-4">
       Technical leadership to deliver value — Software Development Team Leader
+    </p>
+    <p className="text-foreground font-display font-semibold text-base">
+      Diego Forero
+    </p>
+    <p className="text-muted-foreground text-xs">
+      Senior Backend Engineer / Tech Lead · 7+ years
     </p>
     <div className="flex gap-2 mt-6">
       <Badge>SDLC</Badge>

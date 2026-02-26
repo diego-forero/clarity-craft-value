@@ -27,10 +27,14 @@ const SlideAboutMe = () => (
         </Card>
         <Card className="flex flex-col gap-2">
           <div className="flex items-center gap-2 mb-1">
-            <Globe className="text-slide-accent-green" size={18} />
-            <h3 className="font-display font-semibold text-foreground text-sm">Languages</h3>
+            <Database className="text-slide-accent-green" size={18} />
+            <h3 className="font-display font-semibold text-foreground text-sm">Core Strengths</h3>
           </div>
-          <p className="text-muted-foreground text-xs">Spanish (Native) · English (Professional) · French (Basic)</p>
+          <div className="flex flex-wrap gap-1">
+            {["E2E Ownership", "Distributed Systems", "Data Pipelines", "Agile/Scrum"].map((s) => (
+              <span key={s} className="text-[10px] font-medium px-2 py-0.5 rounded-full border bg-primary/20 text-primary border-primary/30">{s}</span>
+            ))}
+          </div>
         </Card>
       </div>
 
@@ -60,30 +64,31 @@ const SlideAboutMe = () => (
         </ul>
       </Card>
 
-      {/* Col 3 - Skills + Education */}
-      <div className="flex flex-col gap-3">
-        <Card className="flex flex-col gap-2 flex-1">
-          <div className="flex items-center gap-2 mb-1">
-            <Code className="text-slide-accent-green" size={18} />
-            <h3 className="font-display font-semibold text-foreground text-sm">Technical Skills</h3>
+      {/* Col 3 - Skills (visual) */}
+      <Card className="flex flex-col gap-3">
+        <div className="flex items-center gap-2 mb-1">
+          <Code className="text-slide-accent-green" size={18} />
+          <h3 className="font-display font-semibold text-foreground text-sm">Technical Toolkit</h3>
+        </div>
+        {[
+          { label: "Backend", items: ["Node.js", "Python", "Go", "REST", "Microservices"], color: "bg-primary/20 text-primary border-primary/30" },
+          { label: "Cloud / AWS", items: ["Lambda", "Glue", "Athena", "S3", "DynamoDB", "SQS"], color: "bg-slide-accent-green/20 text-slide-accent-green border-slide-accent-green/30" },
+          { label: "Data", items: ["ETL", "Spark", "Streaming", "Power BI"], color: "bg-primary/20 text-primary border-primary/30" },
+          { label: "Frontend", items: ["React", "Angular", "TypeScript"], color: "bg-slide-accent-green/20 text-slide-accent-green border-slide-accent-green/30" },
+          { label: "DevOps", items: ["CI/CD", "Terraform", "IaC", "Azure DevOps"], color: "bg-muted text-muted-foreground border-border" },
+        ].map((group) => (
+          <div key={group.label}>
+            <p className="text-foreground text-xs font-semibold mb-1">{group.label}</p>
+            <div className="flex flex-wrap gap-1">
+              {group.items.map((item) => (
+                <span key={item} className={`text-[10px] font-medium px-2 py-0.5 rounded-full border ${group.color}`}>
+                  {item}
+                </span>
+              ))}
+            </div>
           </div>
-          <ul className="space-y-1 text-muted-foreground text-xs">
-            <li><strong className="text-foreground">Backend:</strong> Node.js · Python · Go · REST APIs · Microservices</li>
-            <li><strong className="text-foreground">Cloud:</strong> AWS (Lambda, Glue, Athena, S3, DynamoDB, SQS)</li>
-            <li><strong className="text-foreground">Data:</strong> ETL Pipelines · Spark · Streaming · Power BI</li>
-            <li><strong className="text-foreground">Frontend:</strong> React · Angular · TypeScript</li>
-            <li><strong className="text-foreground">DevOps:</strong> CI/CD · Terraform · Azure DevOps · IaC</li>
-          </ul>
-        </Card>
-        <Card className="flex flex-col gap-2">
-          <div className="flex items-center gap-2 mb-1">
-            <GraduationCap className="text-primary" size={18} />
-            <h3 className="font-display font-semibold text-foreground text-sm">Education</h3>
-          </div>
-          <p className="text-muted-foreground text-xs">Electronic Engineering — Universidad Nacional de Colombia</p>
-          <p className="text-muted-foreground text-xs">Google Professional Cloud Developer</p>
-        </Card>
-      </div>
+        ))}
+      </Card>
     </div>
 
     <div className="flex gap-2 mt-3">
