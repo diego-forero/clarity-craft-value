@@ -1,6 +1,6 @@
 import SlideLayout, { SlideTitle, SlideSubtitle, Badge } from "@/components/SlideLayout";
 import bet365Logo from "@/assets/bet365-logo.png";
-import { CreditCard, Zap, Shield, Users } from "lucide-react";
+import { CreditCard, Zap, Shield, Users, Heart } from "lucide-react";
 
 const SlideClosing = () => (
   <SlideLayout variant="alt" className="items-center justify-center text-center relative overflow-hidden">
