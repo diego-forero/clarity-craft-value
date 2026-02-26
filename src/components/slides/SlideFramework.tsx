@@ -64,14 +64,14 @@ const SlideFramework = ({ onNavigate }: SlideFrameworkProps) => (
           ))}
         </div>
 
-        {/* Feedback loop arrow */}
+        {/* Feedback loop arrow — from Improve back to Understand */}
         <div className="flex justify-center mt-4">
-          <div className="flex items-center gap-2 text-muted-foreground text-xs">
-            <svg width="200" height="24" viewBox="0 0 200 24" fill="none" className="opacity-50">
-              <path d="M190 4C190 4 195 12 190 20L10 20C10 20 5 12 10 4" stroke="hsl(var(--primary))" strokeWidth="1" strokeDasharray="4 3" strokeLinecap="round"/>
-              <path d="M15 7L10 4L13 0" stroke="hsl(var(--primary))" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
+          <div className="relative flex items-center gap-2 text-muted-foreground text-xs">
+            <svg width="260" height="28" viewBox="0 0 260 28" fill="none" className="opacity-50">
+              <path d="M240 4C245 12 240 24 240 24L20 24C20 24 15 12 20 4" stroke="hsl(var(--primary))" strokeWidth="1" strokeDasharray="4 3" strokeLinecap="round"/>
+              <path d="M25 7L20 4L23 0" stroke="hsl(var(--primary))" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
-            <span className="absolute text-xs text-primary/60 font-display">continuous feedback loop</span>
+            <span className="absolute inset-0 flex items-center justify-center text-xs text-primary/60 font-display">continuous feedback loop</span>
           </div>
         </div>
       </div>
