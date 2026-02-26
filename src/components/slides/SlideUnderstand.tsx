@@ -33,9 +33,9 @@ const SlideUnderstand = () => (
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <Clock className="text-slide-accent-green" size={18} />
-          <h3 className="font-display font-semibold text-foreground text-sm">NFRs & SLAs</h3>
+          <h3 className="font-display font-semibold text-foreground text-sm">Performance & Reliability</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Latency, throughput, availability. 2M+ bets/hr → every ms counts in payment processing.</p>
+        <p className="text-muted-foreground text-xs">Latency, throughput, availability — and what "good" looks like in production, conversion impact.</p>
       </Card>
     </div>
   </SlideLayout>
