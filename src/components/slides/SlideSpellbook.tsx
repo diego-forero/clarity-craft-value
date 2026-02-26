@@ -18,7 +18,7 @@ const SlideSpellbook = () => (
           <Package className="text-primary" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">Understand</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Collectibles marketplace. Prioritisation: shipping fulfilment as a critical feature. Dynamic pricing synced with the market.</p>
+        <p className="text-muted-foreground text-xs">E-commerce for Magic: The Gathering cards. Prioritisation: dynamic pricing synced with the market + an admin flow that keeps inventory and orders under control.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
