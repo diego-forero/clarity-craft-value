@@ -39,7 +39,7 @@ const SlideSpellbook = () => (
           <CheckCircle className="text-slide-accent-green" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">In Production</h3>
         </div>
-        <p className="text-muted-foreground text-xs">System running with daily price sync. Automated shipping. 80% reduction in manual work.</p>
+        <p className="text-muted-foreground text-xs">Running system with daily price sync and a structured admin panel for orders and traceability. ~80% less manual work compared to the previous process.</p>
       </Card>
     </div>
   </SlideLayout>
