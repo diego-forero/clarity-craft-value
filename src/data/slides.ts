@@ -13,6 +13,7 @@ import SlideMatas from "@/components/slides/SlideMatas";
 import SlideStress from "@/components/slides/SlideStress";
 import SlideDone from "@/components/slides/SlideDone";
 import SlideClosing from "@/components/slides/SlideClosing";
+import SlideThankYou from "@/components/slides/SlideThankYou";
 
 export interface Slide {
   component: ComponentType<{ onNavigate?: (index: number) => void }>;
@@ -34,4 +35,5 @@ export const slides: Slide[] = [
   { component: SlideStress, title: "Stress: BNS Bug" },
   { component: SlideDone, title: "Done + Metrics" },
   { component: SlideClosing, title: "Closing: bet365" },
+  { component: SlideThankYou, title: "Thank You" },
 ];
