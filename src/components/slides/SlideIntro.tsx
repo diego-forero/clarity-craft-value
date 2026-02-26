@@ -50,7 +50,7 @@ const SlideIntro = () => (
           <li>Clear user stories + acceptance criteria</li>
           <li>Slicing and estimates the whole team understands</li>
         </ul>
-        <img src={imgDeliverables} alt="Vision to deliverables" className="w-full h-28 object-contain rounded-md opacity-85 mt-auto" />
+        <img src={imgDeliverables} alt="Vision to deliverables" className="w-full h-36 object-contain rounded-md opacity-85 mt-auto mb-2" />
       </Card>
     </div>
   </SlideLayout>
