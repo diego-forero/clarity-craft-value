@@ -71,7 +71,7 @@ const SlideAboutMe = () => (
           <h3 className="font-display font-semibold text-foreground text-sm">Technical Toolkit</h3>
         </div>
         {[
-          { label: "Backend", items: ["Node.js", "Python", "Go", "REST", "Microservices"], color: "bg-primary/20 text-primary border-primary/30" },
+          { label: "Backend", items: ["Node.js", "Python", "Js", "REST", "Microservices"], color: "bg-primary/20 text-primary border-primary/30" },
           { label: "Cloud / AWS", items: ["Lambda", "Glue", "Athena", "S3", "DynamoDB", "SQS"], color: "bg-slide-accent-green/20 text-slide-accent-green border-slide-accent-green/30" },
           { label: "Data", items: ["ETL", "Spark", "Streaming", "Power BI"], color: "bg-primary/20 text-primary border-primary/30" },
           { label: "Frontend", items: ["React", "Angular", "TypeScript"], color: "bg-slide-accent-green/20 text-slide-accent-green border-slide-accent-green/30" },
