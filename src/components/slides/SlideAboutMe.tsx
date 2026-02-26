@@ -23,7 +23,7 @@ const SlideAboutMe = () => (
             Tech Lead with a strong backend foundation — close to the technical detail to understand systems end-to-end, and close to the user to maximise value delivery.
           </p>
           <p className="text-muted-foreground text-xs leading-relaxed">
-            Comfortable owning the full lifecycle: from discovery and architecture to CI/CD and post-release observability.
+            Comfortable owning the full lifecycle: from discovery and architecture to CI/CD and production monitoring.
           </p>
         </Card>
         <Card className="flex flex-col gap-2">
