@@ -47,7 +47,7 @@ const SlideAboutMe = () => (
         <ul className="space-y-2 text-muted-foreground text-xs">
           <li className="flex items-start gap-2">
             <span className="text-primary mt-0.5 shrink-0">▸</span>
-            <span><strong className="text-foreground">Canal RCN</strong> — Sr. Software Engineer. Built distributed data pipelines (AWS Glue + Spark, +5M records/day). Payment integrations under PCI DSS.</span>
+            <span><strong className="text-foreground">Canal RCN</strong> — Sr. Software Engineer (Backend focus). Built distributed data pipelines (AWS Glue + Spark, +5M records/day). Payment integrations under PCI DSS.</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-primary mt-0.5 shrink-0">▸</span>
