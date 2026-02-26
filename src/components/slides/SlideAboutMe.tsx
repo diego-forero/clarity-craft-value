@@ -7,7 +7,7 @@ const SlideAboutMe = () => (
       Diego Forero — <span className="text-gradient-yellow">Who Am I?</span>
     </SlideTitle>
     <SlideSubtitle>
-      Senior Backend Engineer / Tech Lead · 7+ years building & leading in production
+      Tech Lead / Senior Software Engineer · Backend-focused, Full-Stack capable · 7+ years
     </SlideSubtitle>
 
     <div className="grid grid-cols-3 gap-4 flex-1">
@@ -19,7 +19,7 @@ const SlideAboutMe = () => (
             <h3 className="font-display font-semibold text-foreground text-sm">Professional Profile</h3>
           </div>
           <p className="text-muted-foreground text-xs leading-relaxed">
-            Tech Lead with a strong development foundation — close to the technical detail to understand systems end-to-end, and close to the user to maximise value delivery.
+            Tech Lead with a strong backend foundation — close to the technical detail to understand systems end-to-end, and close to the user to maximise value delivery.
           </p>
           <p className="text-muted-foreground text-xs leading-relaxed">
             Comfortable owning the full lifecycle: from discovery and architecture to CI/CD and post-release observability.
@@ -47,7 +47,7 @@ const SlideAboutMe = () => (
         <ul className="space-y-2 text-muted-foreground text-xs">
           <li className="flex items-start gap-2">
             <span className="text-primary mt-0.5 shrink-0">▸</span>
-            <span><strong className="text-foreground">Canal RCN</strong> — Sr. Software Engineer. Built distributed data pipelines (AWS Glue + Spark, +5M records/day). Payment integrations under PCI DSS.</span>
+            <span><strong className="text-foreground">Canal RCN</strong> — Sr. Software Engineer (Backend focus). Built distributed data pipelines (AWS Glue + Spark, +5M records/day). Payment integrations under PCI DSS.</span>
           </li>
           <li className="flex items-start gap-2">
             <span className="text-primary mt-0.5 shrink-0">▸</span>
