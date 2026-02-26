@@ -47,6 +47,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        slide: {
+          bg: "hsl(var(--slide-bg))",
+          "bg-alt": "hsl(var(--slide-bg-alt))",
+          "accent-green": "hsl(var(--slide-accent-green))",
+          "accent-yellow": "hsl(var(--slide-accent-yellow))",
+          "text-dim": "hsl(var(--slide-text-dim))",
+          highlight: "hsl(var(--slide-highlight))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
