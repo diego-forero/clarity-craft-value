@@ -7,7 +7,7 @@ const SlideAboutMe = () => (
       Diego Forero — <span className="text-gradient-yellow">Who Am I?</span>
     </SlideTitle>
     <SlideSubtitle>
-      Senior Backend Engineer / Tech Lead · 7+ years building & leading in production
+      Tech Lead / Senior Software Engineer · Backend-focused, Full-Stack capable · 7+ years
     </SlideSubtitle>
 
     <div className="grid grid-cols-3 gap-4 flex-1">
