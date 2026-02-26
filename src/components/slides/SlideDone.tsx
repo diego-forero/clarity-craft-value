@@ -27,12 +27,12 @@ const SlideDone = () => (
           <h3 className="font-display font-semibold text-foreground text-sm">Team Success Metrics</h3>
         </div>
         <ul className="space-y-1.5 text-muted-foreground text-xs">
-          <li className="flex items-start gap-2"><span className="text-slide-accent-green mt-0.5">→</span> Deployment frequency (weekly+)</li>
-          <li className="flex items-start gap-2"><span className="text-slide-accent-green mt-0.5">→</span> Lead time for changes (&lt;1 week)</li>
-          <li className="flex items-start gap-2"><span className="text-slide-accent-green mt-0.5">→</span> MTTR (&lt;4 hours)</li>
-          <li className="flex items-start gap-2"><span className="text-slide-accent-green mt-0.5">→</span> Change failure rate (&lt;15%)</li>
-          <li className="flex items-start gap-2"><span className="text-slide-accent-green mt-0.5">→</span> Team engagement & retention</li>
-          <li className="flex items-start gap-2"><span className="text-slide-accent-green mt-0.5">→</span> Business outcomes achieved</li>
+          <li className="flex items-start gap-2"><span className="text-slide-accent-green mt-0.5">→</span> Delivery cadence: regular releases (weekly / bi-weekly)</li>
+          <li className="flex items-start gap-2"><span className="text-slide-accent-green mt-0.5">→</span> Cycle time: time from "work started" to "in production" stays predictable</li>
+          <li className="flex items-start gap-2"><span className="text-slide-accent-green mt-0.5">→</span> QA rework rate: fewer stories sent back from QA (clearer stories, better testing)</li>
+          <li className="flex items-start gap-2"><span className="text-slide-accent-green mt-0.5">→</span> Production quality: fewer bugs reaching production; fewer hotfixes and rollbacks</li>
+          <li className="flex items-start gap-2"><span className="text-slide-accent-green mt-0.5">→</span> Incident recovery time: how fast we restore normal service when something breaks</li>
+          <li className="flex items-start gap-2"><span className="text-slide-accent-green mt-0.5">→</span> Impact delivered: measurable outcomes achieved (success rate, drop-off reduction, faster confirmations)</li>
         </ul>
       </Card>
     </div>
