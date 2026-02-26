@@ -35,7 +35,7 @@ const SlideImprove = () => (
           <Lightbulb className="text-slide-accent-green" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">Tech Debt Backlog</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Maintain a prioritised tech debt backlog. 20% of sprint capacity for continuous improvements.</p>
+        <p className="text-muted-foreground text-xs">Maintain a prioritised tech debt backlog. Reserve dedicated capacity each sprint to pay it down consistently.</p>
       </Card>
     </div>
   </SlideLayout>
