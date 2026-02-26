@@ -20,7 +20,7 @@ const SlideCover = () => (
       Diego Forero
     </p>
     <p className="text-muted-foreground text-xs">
-      Senior Backend Engineer / Tech Lead · 7+ years
+      Tech Lead / Senior Software Engineer · Backend-focused · 7+ years
     </p>
     <div className="flex gap-2 mt-6">
       <Badge>SDLC</Badge>
