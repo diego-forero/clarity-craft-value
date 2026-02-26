@@ -15,15 +15,8 @@ const SlideRCN = () => (
 
     <div className="flex-1 flex flex-col gap-4">
       {/* Pipeline visual */}
-      <Card className="flex items-center justify-between gap-2 text-center">
-        {["API Extraction", "Raw (CSV)", "AWS Glue", "Parquet", "Athena", "Power BI"].map((step, i) => (
-          <div key={step} className="flex items-center gap-2">
-            <div className="bg-secondary rounded-md px-3 py-2">
-              <p className="text-foreground text-xs font-display font-semibold">{step}</p>
-            </div>
-            {i < 5 && <ArrowRight className="text-primary shrink-0" size={14} />}
-          </div>
-        ))}
+      <Card className="p-2">
+        <img src={rcnPipeline} alt="RCN Data Pipeline: API → CSV → AWS Glue → Parquet → Athena → Power BI" className="w-full h-auto rounded" />
       </Card>
 
       <div className="grid grid-cols-3 gap-4">
