@@ -32,7 +32,7 @@ const SlideSpellbook = () => (
           <Layers className="text-primary" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">Deliver</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Incremental plan: MVP with catalogue and basic checkout. Then pricing sync. Then advanced fulfilment. Deliveries every 2 weeks.</p>
+        <p className="text-muted-foreground text-xs">Incremental plan: MVP with catalogue + cart + checkout + admin basics. Then daily pricing sync. Then admin improvements (reporting, controls).</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
