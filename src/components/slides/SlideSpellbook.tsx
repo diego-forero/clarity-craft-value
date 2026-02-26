@@ -18,28 +18,28 @@ const SlideSpellbook = () => (
           <Package className="text-primary" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">Understand</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Collectibles marketplace. Prioritisation: shipping fulfilment as a critical feature. Dynamic pricing synced with the market.</p>
+        <p className="text-muted-foreground text-xs">E-commerce for Magic: The Gathering cards. Prioritisation: dynamic pricing synced with the market + an admin flow that keeps inventory and orders under control.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <DollarSign className="text-slide-accent-green" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">Translate</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Vertical stories: catalogue → cart → checkout → shipping. Pricing sync as an independent daily job. Slicing by user flow.</p>
+        <p className="text-muted-foreground text-xs">User-flow stories: catalogue → cart → checkout + admin workflows (orders, inventory, reporting). Pricing sync as an independent daily job.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <Layers className="text-primary" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">Deliver</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Incremental plan: MVP with catalogue and basic checkout. Then pricing sync. Then advanced fulfilment. Deliveries every 2 weeks.</p>
+        <p className="text-muted-foreground text-xs">Incremental plan: MVP with catalogue + cart + checkout + admin basics. Then daily pricing sync. Then admin improvements (reporting, controls).</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <CheckCircle className="text-slide-accent-green" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">In Production</h3>
         </div>
-        <p className="text-muted-foreground text-xs">System running with daily price sync. Automated shipping. 80% reduction in manual work.</p>
+        <p className="text-muted-foreground text-xs">Running system with daily price sync and a structured admin panel for orders and traceability. ~80% less manual work compared to the previous process.</p>
       </Card>
     </div>
   </SlideLayout>
