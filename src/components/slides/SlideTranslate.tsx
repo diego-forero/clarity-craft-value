@@ -21,7 +21,7 @@ const SlideTranslate = () => (
           <Scissors className="text-slide-accent-green" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">Story Slicing</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Vertical slicing: each story delivers independent value. Thin end-to-end slices that validate assumptions early.</p>
+        <p className="text-muted-foreground text-xs">Vertical slicing: each story delivers independent value. Break work into small end-to-end increments that deliver value early and reduce uncertainty.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
