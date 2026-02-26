@@ -14,7 +14,7 @@ const SlideImprove = () => (
           <Activity className="text-primary" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">Observability</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Logs, metrics, alerts. Dashboards to understand system health in real time. Clear SLIs/SLOs.</p>
+        <p className="text-muted-foreground text-xs">Logs, metrics, alerts. Dashboards to understand system health in real time. Know what "healthy" looks like before something breaks.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
