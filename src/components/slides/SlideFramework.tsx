@@ -3,7 +3,7 @@ import { Search, ArrowRightLeft, Rocket, TrendingUp } from "lucide-react";
 
 const steps = [
   { icon: Search, label: "Understand", desc: "E2E: user, flow, data, risks, SLAs", color: "text-primary", slideIndex: 4 },
-  { icon: ArrowRightLeft, label: "Translate", desc: "Outcomes + stories with AC + NFRs + slicing", color: "text-slide-accent-green", slideIndex: 5 },
+  { icon: ArrowRightLeft, label: "Translate", desc: "Outcomes + well-defined stories + acceptance criteria + clear scope", color: "text-slide-accent-green", slideIndex: 5 },
   { icon: Rocket, label: "Deliver", desc: "Planning, ownership, reviews, pairing, CI/CD", color: "text-primary", slideIndex: 6 },
   { icon: TrendingUp, label: "Improve", desc: "Operate, metrics, feedback, improvement roadmap", color: "text-slide-accent-green", slideIndex: 7 },
 ];
