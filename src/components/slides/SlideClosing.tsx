@@ -11,7 +11,7 @@ const SlideClosing = () => (
     <SlideTitle className="text-center">How This Fits bet365 Payments</SlideTitle>
     <SlideSubtitle>My framework applied to the Payments team</SlideSubtitle>
 
-    <div className="grid grid-cols-4 gap-3 max-w-3xl">
+    <div className="grid grid-cols-5 gap-3 max-w-4xl">
       <div className="bg-card/60 border border-border rounded-lg p-3 flex flex-col items-center gap-2">
         <CreditCard className="text-primary" size={22} />
         <p className="text-foreground text-xs font-display font-semibold">Critical Systems</p>
