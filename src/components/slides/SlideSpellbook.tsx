@@ -25,7 +25,7 @@ const SlideSpellbook = () => (
           <DollarSign className="text-slide-accent-green" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">Translate</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Vertical stories: catalogue → cart → checkout → shipping. Pricing sync as an independent daily job. Slicing by user flow.</p>
+        <p className="text-muted-foreground text-xs">User-flow stories: catalogue → cart → checkout + admin workflows (orders, inventory, reporting). Pricing sync as an independent daily job.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
