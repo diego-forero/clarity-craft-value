@@ -7,6 +7,9 @@ const SlideViewer = () => {
 
   const next = useCallback(() => setCurrent((c) => Math.min(c + 1, slides.length - 1)), []);
   const prev = useCallback(() => setCurrent((c) => Math.max(c - 1, 0)), []);
+  const navigateTo = useCallback((index: number) => {
+    if (index >= 0 && index < slides.length) setCurrent(index);
+  }, []);
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
@@ -21,14 +24,12 @@ const SlideViewer = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
-      {/* Slide area */}
       <div className="flex-1 flex items-center justify-center p-4">
         <div className="w-full max-w-5xl aspect-[16/9] rounded-xl overflow-hidden shadow-2xl border border-border relative">
-          <SlideComponent />
+          <SlideComponent onNavigate={navigateTo} />
         </div>
       </div>
 
-      {/* Controls */}
       <div className="flex items-center justify-center gap-4 pb-6">
         <button
           onClick={prev}

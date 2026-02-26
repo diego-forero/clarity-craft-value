@@ -4,9 +4,9 @@ import { Activity, RefreshCw, LineChart, Lightbulb } from "lucide-react";
 const SlideImprove = () => (
   <SlideLayout variant="alt">
     <SlideTitle>
-      <span className="text-primary">Improve</span> — Operar, medir, iterar
+      <span className="text-primary">Improve</span> — Operate, measure, iterate
     </SlideTitle>
-    <SlideSubtitle>Métricas · Retrospectivas · Roadmap de mejoras continuas</SlideSubtitle>
+    <SlideSubtitle>Metrics · Retrospectives · Continuous improvement roadmap</SlideSubtitle>
 
     <div className="grid grid-cols-2 gap-4 flex-1">
       <Card>
@@ -14,28 +14,28 @@ const SlideImprove = () => (
           <Activity className="text-primary" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">Observability</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Logs, métricas, alertas. Dashboards para entender salud del sistema en tiempo real. SLIs/SLOs claros.</p>
+        <p className="text-muted-foreground text-xs">Logs, metrics, alerts. Dashboards to understand system health in real time. Clear SLIs/SLOs.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <LineChart className="text-slide-accent-green" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">DORA Metrics</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Deployment frequency, lead time, MTTR, change failure rate. Medición objetiva de la efectividad del equipo.</p>
+        <p className="text-muted-foreground text-xs">Deployment frequency, lead time, MTTR, change failure rate. Objective measurement of team effectiveness.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <RefreshCw className="text-primary" size={18} />
-          <h3 className="font-display font-semibold text-foreground text-sm">Retrospectivas accionables</h3>
+          <h3 className="font-display font-semibold text-foreground text-sm">Actionable Retrospectives</h3>
         </div>
-        <p className="text-muted-foreground text-xs">No solo identificar problemas — cada retro produce máximo 2 acciones concretas asignadas con fecha.</p>
+        <p className="text-muted-foreground text-xs">Not just identifying problems — each retro produces at most 2 concrete actions assigned with a deadline.</p>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-2">
           <Lightbulb className="text-slide-accent-green" size={18} />
           <h3 className="font-display font-semibold text-foreground text-sm">Tech Debt Backlog</h3>
         </div>
-        <p className="text-muted-foreground text-xs">Mantener un backlog de deuda técnica priorizado. 20% del sprint capacity para mejoras continuas.</p>
+        <p className="text-muted-foreground text-xs">Maintain a prioritised tech debt backlog. 20% of sprint capacity for continuous improvements.</p>
       </Card>
     </div>
   </SlideLayout>

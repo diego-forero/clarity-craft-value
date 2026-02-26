@@ -1,41 +1,91 @@
 import SlideLayout, { SlideTitle, SlideSubtitle, Badge } from "@/components/SlideLayout";
-import { Search, ArrowRightLeft, Rocket, TrendingUp, ArrowRight } from "lucide-react";
+import { Search, ArrowRightLeft, Rocket, TrendingUp } from "lucide-react";
 
 const steps = [
-  { icon: Search, label: "Understand", desc: "E2E: usuario, flujo, datos, riesgos, SLAs", color: "text-primary" },
-  { icon: ArrowRightLeft, label: "Translate", desc: "Outcomes + historias con AC + NFRs + slicing", color: "text-slide-accent-green" },
-  { icon: Rocket, label: "Deliver", desc: "Planning, ownership, reviews, pairing, CI/CD", color: "text-primary" },
-  { icon: TrendingUp, label: "Improve", desc: "Operar, métricas, retro, roadmap de mejoras", color: "text-slide-accent-green" },
+  { icon: Search, label: "Understand", desc: "E2E: user, flow, data, risks, SLAs", color: "text-primary", slideIndex: 4 },
+  { icon: ArrowRightLeft, label: "Translate", desc: "Outcomes + stories with AC + NFRs + slicing", color: "text-slide-accent-green", slideIndex: 5 },
+  { icon: Rocket, label: "Deliver", desc: "Planning, ownership, reviews, pairing, CI/CD", color: "text-primary", slideIndex: 6 },
+  { icon: TrendingUp, label: "Improve", desc: "Operate, metrics, retro, improvement roadmap", color: "text-slide-accent-green", slideIndex: 7 },
 ];
 
-const SlideFramework = () => (
+interface SlideFrameworkProps {
+  onNavigate?: (index: number) => void;
+}
+
+const SlideFramework = ({ onNavigate }: SlideFrameworkProps) => (
   <SlideLayout variant="alt">
     <SlideTitle>
       Framework: <span className="text-gradient-yellow">Understand → Translate → Deliver → Improve</span>
     </SlideTitle>
-    <SlideSubtitle>Mi modelo mental para liderar — mapea directamente al SDLC</SlideSubtitle>
+    <SlideSubtitle>My mental model for leading — maps directly to the SDLC. Strategic thinking meets hands-on problem-solving.</SlideSubtitle>
 
-    <div className="flex items-center justify-between flex-1 gap-2">
-      {steps.map((step, i) => (
-        <div key={step.label} className="flex items-center gap-2 flex-1">
-          <div className="bg-card/60 border border-border rounded-lg p-4 flex-1 flex flex-col items-center text-center gap-2">
-            <step.icon className={step.color} size={28} />
-            <h3 className="font-display font-bold text-foreground text-sm">{step.label}</h3>
-            <p className="text-muted-foreground text-xs leading-relaxed">{step.desc}</p>
-          </div>
-          {i < steps.length - 1 && <ArrowRight className="text-muted-foreground shrink-0" size={16} />}
+    {/* Visual diagram */}
+    <div className="flex-1 flex flex-col items-center justify-center gap-6">
+      {/* Circular flow diagram */}
+      <div className="relative w-full max-w-3xl mx-auto">
+        {/* Connecting line */}
+        <div className="absolute top-1/2 left-[10%] right-[10%] h-0.5 bg-gradient-to-r from-primary via-slide-accent-green to-primary opacity-40 -translate-y-1/2" />
+        
+        <div className="relative flex items-center justify-between">
+          {steps.map((step, i) => (
+            <div key={step.label} className="flex flex-col items-center gap-2 relative z-10">
+              {/* Clickable node */}
+              <button
+                onClick={() => onNavigate?.(step.slideIndex)}
+                className="group flex flex-col items-center gap-3 cursor-pointer transition-transform hover:scale-105 focus:outline-none"
+              >
+                {/* Icon circle */}
+                <div className={`w-16 h-16 rounded-full border-2 flex items-center justify-center transition-all
+                  ${i % 2 === 0 
+                    ? "border-primary bg-primary/10 group-hover:bg-primary/25 group-hover:shadow-[0_0_20px_hsl(46_95%_55%/0.3)]" 
+                    : "border-slide-accent-green bg-slide-accent-green/10 group-hover:bg-slide-accent-green/25 group-hover:shadow-[0_0_20px_hsl(155_60%_40%/0.3)]"
+                  }`}
+                >
+                  <step.icon className={step.color} size={26} />
+                </div>
+                {/* Label */}
+                <span className="font-display font-bold text-foreground text-sm group-hover:text-primary transition-colors">
+                  {step.label}
+                </span>
+                <span className="text-muted-foreground text-xs text-center max-w-[140px] leading-tight">
+                  {step.desc}
+                </span>
+              </button>
+
+              {/* Arrow connector */}
+              {i < steps.length - 1 && (
+                <div className="absolute -right-8 top-7 text-muted-foreground">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M1 8H14M14 8L9 3M14 8L9 13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
-      ))}
+
+        {/* Feedback loop arrow */}
+        <div className="flex justify-center mt-4">
+          <div className="flex items-center gap-2 text-muted-foreground text-xs">
+            <svg width="200" height="24" viewBox="0 0 200 24" fill="none" className="opacity-50">
+              <path d="M190 4C190 4 195 12 190 20L10 20C10 20 5 12 10 4" stroke="hsl(var(--primary))" strokeWidth="1" strokeDasharray="4 3" strokeLinecap="round"/>
+              <path d="M15 7L10 4L13 0" stroke="hsl(var(--primary))" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+            <span className="absolute text-xs text-primary/60 font-display">continuous feedback loop</span>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div className="mt-4 flex gap-2 flex-wrap">
+    {/* SDLC mapping */}
+    <div className="mt-2 flex gap-2 flex-wrap items-center">
       <Badge variant="dim">Discovery</Badge>
       <Badge variant="dim">Design</Badge>
       <Badge variant="dim">Build</Badge>
       <Badge variant="dim">Test</Badge>
       <Badge variant="dim">Release</Badge>
       <Badge variant="dim">Operate</Badge>
-      <span className="text-muted-foreground text-xs self-center ml-2">← SDLC phases mapped</span>
+      <span className="text-muted-foreground text-xs ml-2">← SDLC phases mapped</span>
     </div>
   </SlideLayout>
 );

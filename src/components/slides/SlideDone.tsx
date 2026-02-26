@@ -1,10 +1,10 @@
 import SlideLayout, { SlideTitle, SlideSubtitle, Card, Badge } from "@/components/SlideLayout";
-import { CheckCircle2, BarChart3, Target, ListChecks } from "lucide-react";
+import { CheckCircle2, BarChart3 } from "lucide-react";
 
 const SlideDone = () => (
   <SlideLayout>
-    <SlideTitle>Definition of Done + Medición de Éxito</SlideTitle>
-    <SlideSubtitle>Cómo defino que un producto está completo y que el equipo está siendo exitoso</SlideSubtitle>
+    <SlideTitle>Definition of Done + Measuring Success</SlideTitle>
+    <SlideSubtitle>How I define product completion and measure team success</SlideSubtitle>
 
     <div className="grid grid-cols-2 gap-4 flex-1">
       <Card>
@@ -13,18 +13,18 @@ const SlideDone = () => (
           <h3 className="font-display font-semibold text-foreground text-sm">Definition of Done</h3>
         </div>
         <ul className="space-y-1.5 text-muted-foreground text-xs">
-          <li className="flex items-start gap-2"><span className="text-primary mt-0.5">✓</span> Acceptance criteria cumplidos</li>
-          <li className="flex items-start gap-2"><span className="text-primary mt-0.5">✓</span> Tests automatizados (unit + integration)</li>
-          <li className="flex items-start gap-2"><span className="text-primary mt-0.5">✓</span> Code review aprobado</li>
-          <li className="flex items-start gap-2"><span className="text-primary mt-0.5">✓</span> Desplegado en staging + smoke tested</li>
-          <li className="flex items-start gap-2"><span className="text-primary mt-0.5">✓</span> Documentación actualizada</li>
+          <li className="flex items-start gap-2"><span className="text-primary mt-0.5">✓</span> Acceptance criteria met</li>
+          <li className="flex items-start gap-2"><span className="text-primary mt-0.5">✓</span> Automated tests (unit + integration)</li>
+          <li className="flex items-start gap-2"><span className="text-primary mt-0.5">✓</span> Code review approved</li>
+          <li className="flex items-start gap-2"><span className="text-primary mt-0.5">✓</span> Deployed to staging + smoke tested</li>
+          <li className="flex items-start gap-2"><span className="text-primary mt-0.5">✓</span> Documentation updated</li>
           <li className="flex items-start gap-2"><span className="text-primary mt-0.5">✓</span> Observability (logs, metrics, alerts)</li>
         </ul>
       </Card>
       <Card>
         <div className="flex items-center gap-2 mb-3">
           <BarChart3 className="text-slide-accent-green" size={18} />
-          <h3 className="font-display font-semibold text-foreground text-sm">Métricas de éxito del equipo</h3>
+          <h3 className="font-display font-semibold text-foreground text-sm">Team Success Metrics</h3>
         </div>
         <ul className="space-y-1.5 text-muted-foreground text-xs">
           <li className="flex items-start gap-2"><span className="text-slide-accent-green mt-0.5">→</span> Deployment frequency (weekly+)</li>
