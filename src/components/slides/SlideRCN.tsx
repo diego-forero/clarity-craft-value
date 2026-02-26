@@ -1,6 +1,7 @@
 import SlideLayout, { SlideTitle, SlideSubtitle, Card } from "@/components/SlideLayout";
 import rcnLogo from "@/assets/rcn-logo.png";
-import { Database, ArrowRight, BarChart3 } from "lucide-react";
+import rcnPipeline from "@/assets/rcn-pipeline.png";
+import { Database, BarChart3 } from "lucide-react";
 
 const SlideRCN = () => (
   <SlideLayout variant="alt">
