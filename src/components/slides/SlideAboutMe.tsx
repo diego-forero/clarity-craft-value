@@ -27,10 +27,14 @@ const SlideAboutMe = () => (
         </Card>
         <Card className="flex flex-col gap-2">
           <div className="flex items-center gap-2 mb-1">
-            <Globe className="text-slide-accent-green" size={18} />
-            <h3 className="font-display font-semibold text-foreground text-sm">Languages</h3>
+            <Database className="text-slide-accent-green" size={18} />
+            <h3 className="font-display font-semibold text-foreground text-sm">Core Strengths</h3>
           </div>
-          <p className="text-muted-foreground text-xs">Spanish (Native) · English (Professional) · French (Basic)</p>
+          <div className="flex flex-wrap gap-1">
+            {["E2E Ownership", "Distributed Systems", "Data Pipelines", "Agile/Scrum"].map((s) => (
+              <span key={s} className="text-[10px] font-medium px-2 py-0.5 rounded-full border bg-primary/20 text-primary border-primary/30">{s}</span>
+            ))}
+          </div>
         </Card>
       </div>
 
