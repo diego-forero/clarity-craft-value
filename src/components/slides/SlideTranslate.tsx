@@ -6,7 +6,7 @@ const SlideTranslate = () => (
     <SlideTitle>
       <span className="text-primary">Translate</span> — From needs to deliverable stories
     </SlideTitle>
-    <SlideSubtitle>Outcomes → User Stories + AC + NFRs + Story Slicing + Estimation</SlideSubtitle>
+    <SlideSubtitle>Outcomes → well-defined stories → acceptance criteria → quality requirements → delivery plan</SlideSubtitle>
 
     <div className="grid grid-cols-2 gap-4 flex-1">
       <Card>
