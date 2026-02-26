@@ -22,7 +22,7 @@ const SlideIntro = () => (
           <li>Answer questions with context (dev, QA, stakeholders)</li>
           <li>Assess impact, risks, and improvement opportunities</li>
         </ul>
-        <img src={imgE2E} alt="E2E understanding" className="w-full h-28 object-contain rounded-md opacity-85 mt-auto" />
+        <img src={imgE2E} alt="E2E understanding" className="w-full h-36 object-contain rounded-md opacity-85 mt-auto mb-2" />
       </Card>
       <Card className="flex flex-col gap-2 p-3">
         <div className="flex items-center gap-2 mb-1">
@@ -36,7 +36,7 @@ const SlideIntro = () => (
           <li>Pair on complex problems and unblock fast</li>
           <li>Set standards that protect quality</li>
         </ul>
-        <img src={imgTechnical} alt="Technical detail" className="w-full h-28 object-contain rounded-md opacity-85 mt-auto" />
+        <img src={imgTechnical} alt="Technical detail" className="w-full h-36 object-contain rounded-md opacity-85 mt-auto mb-2" />
       </Card>
       <Card className="flex flex-col gap-2 p-3">
         <div className="flex items-center gap-2 mb-1">
@@ -50,7 +50,7 @@ const SlideIntro = () => (
           <li>Clear user stories + acceptance criteria</li>
           <li>Slicing and estimates the whole team understands</li>
         </ul>
-        <img src={imgDeliverables} alt="Vision to deliverables" className="w-full h-28 object-contain rounded-md opacity-85 mt-auto" />
+        <img src={imgDeliverables} alt="Vision to deliverables" className="w-full h-36 object-contain rounded-md opacity-85 mt-auto mb-2" />
       </Card>
     </div>
   </SlideLayout>
