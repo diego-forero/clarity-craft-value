@@ -1,5 +1,6 @@
 import SlideLayout, { SlideTitle, SlideSubtitle, Card, Badge } from "@/components/SlideLayout";
-import { Briefcase, GraduationCap, Globe, Award, Code, Database } from "lucide-react";
+import { Briefcase, Award, Code, Database } from "lucide-react";
+import aboutMeIllustration from "@/assets/about-me-illustration.png";
 
 const SlideAboutMe = () => (
   <SlideLayout>
